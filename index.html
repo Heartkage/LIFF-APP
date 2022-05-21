@@ -2,12 +2,16 @@
 <html lang="en">
     <head>
         <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-        <script src="LIFFTest.js"></script>
+        <script type="importmap">
+        { "imports": {
+            "@line/liff" : "https://unpkg.com/@line/liff@2.19.1/dist/lib/index.js"
+        } }</script>
+        <script type="text/javascript" src="./liff-test.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LIFF</title>
     </head>
     <body>
         <h1>Welcome to Leo's Playground</h1>
-        <button onclick="shareMessage()">Try it</button>
+        <input type="button" onclick="shareMessage()" value="TRY IT">
     </body>
 </html>

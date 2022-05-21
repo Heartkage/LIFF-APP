@@ -1,4 +1,4 @@
-import liff from '@line/liff';
+//import liff from '@line/liff';
 
 function shareMessage()
 {
@@ -7,7 +7,7 @@ function shareMessage()
         withLoginOnExternalBrowser: true,
     }).then(() => {
         if(!liff.isLoggedIn()){
-            liff.login({redirectUri: 'https://google.com'});
+            liff.login({redirectUri: 'https://heartkage.github.io/LIFF-APP/'});
         }
         else{
             liff.sendMessages([{
