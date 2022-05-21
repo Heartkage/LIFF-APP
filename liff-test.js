@@ -21,7 +21,7 @@ async function shareMessage()
                           "aspectMode": "cover",
                           "action": {
                             "type": "uri",
-                            "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                            "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%88%91%E5%85%B6%E5%AF%A6%E6%AF%94%E4%BD%A0%E6%83%B3%E7%9A%84%E6%9B%B4%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E6%88%91%E5%80%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
                           }
                         },
                         "body": {
@@ -51,7 +51,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "action",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
                               }
                             }
                           ],
@@ -68,7 +68,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "打開我的禮物",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%88%91%E5%85%B6%E5%AF%A6%E6%AF%94%E4%BD%A0%E6%83%B3%E7%9A%84%E6%9B%B4%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E6%88%91%E5%80%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
                               }
                             },
                             {
@@ -78,7 +78,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "傳送感謝小卡",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%88%91%E5%85%B6%E5%AF%A6%E6%AF%94%E4%BD%A0%E6%83%B3%E7%9A%84%E6%9B%B4%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E6%88%91%E5%80%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
                               }
                             },
                             {
@@ -118,7 +118,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "action",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%88%91%E5%85%B6%E5%AF%A6%E6%AF%94%E4%BD%A0%E6%83%B3%E7%9A%84%E6%9B%B4%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E6%88%91%E5%80%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"
                               },
                               "paddingBottom": "sm"
                             }
