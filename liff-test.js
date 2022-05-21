@@ -25,78 +25,39 @@ function shareMessage()
         if(liff.isApiAvailable('shareTargetPicker')){
             liff.shareTargetPicker([
                 {
-                    "type":"template",
-                    "template":{
-                        "type": "bubble",
-                        "hero": {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
-                          "size": "full",
-                          "aspectRatio": "20:13",
-                          "aspectMode": "cover",
-                          "action": {
-                            "type": "message",
-                            "label": "action",
-                            "text": "Hello"
-                          },
-                          "align": "start"
+                    "type": "template",
+                    "altText": "This is a buttons template",
+                    "template": {
+                        "type": "buttons",
+                        "thumbnailImageUrl": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_2_restaurant.png",
+                        "imageAspectRatio": "rectangle",
+                        "imageSize": "cover",
+                        "imageBackgroundColor": "#FFFFFF",
+                        "title": "Menu",
+                        "text": "Please select",
+                        "defaultAction": {
+                            "type": "uri",
+                            "label": "Test",
+                            "uri": "https://google.com"
                         },
-                        "body": {
-                          "type": "box",
-                          "layout": "vertical",
-                          "spacing": "md",
-                          "contents": [
+                        "actions": [
                             {
-                              "type": "box",
-                              "layout": "horizontal",
-                              "contents": [
-                                {
-                                  "type": "image",
-                                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": "Test",
-                                  "align": "center"
-                                }
-                              ],
-                              "alignItems": "center"
+                              "type": "uri",
+                              "label": "Button1",
+                              "uri": "https://google.com"
                             },
                             {
-                              "type": "button",
-                              "action": {
-                                "type": "message",
-                                "label": "Button1",
-                                "text": "Hello1"
-                              }
+                              "type": "uri",
+                              "label": "Button2",
+                              "uri": "https://google.com"
                             },
                             {
-                              "type": "button",
-                              "action": {
-                                "type": "message",
-                                "label": "Button2",
-                                "text": "Hello2"
-                              }
-                            },
-                            {
-                              "type": "separator"
-                            },
-                            {
-                              "type": "button",
-                              "action": {
-                                "type": "message",
-                                "label": "Button3",
-                                "text": "Hello3"
-                              }
+                              "type": "uri",
+                              "label": "Button3",
+                              "uri": "https://google.com"
                             }
-                          ]
-                        },
-                        "styles": {
-                          "header": {
-                            "separator": false
-                          }
-                        }
-                      }
+                        ]
+                    }                  
                 },
             ]).then(function (res) {
                 if (res) {
