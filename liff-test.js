@@ -36,9 +36,9 @@ function shareMessage()
                         "title": "Menu",
                         "text": "Please select",
                         "defaultAction": {
-                            "type": "uri",
+                            "type": "message",
                             "label": "Test",
-                            "uri": "https://google.com"
+                            "text": "Hello World"
                         },
                         "actions": [
                             {
