@@ -124,7 +124,7 @@ function shareMessage()
         }
         
 
-        liff.closeWindow();
+        //liff.closeWindow();
     });
 }
 
