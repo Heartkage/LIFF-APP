@@ -28,7 +28,7 @@ function shareMessage()
                         "defaultAction": {
                             "type": "uri",
                             "label": "Test",
-                            "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
+                            "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
                         },
                         "actions": [
                             {
