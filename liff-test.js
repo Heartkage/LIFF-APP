@@ -100,7 +100,8 @@ async function shareMessage()
                                   "text": "限時送禮",
                                   "size": "md",
                                   "weight": "bold",
-                                  "color": "#A9A9A9"
+                                  "color": "#A9A9A9",
+                                  "offsetBottom": "sm"
                                 },
                                 {
                                   "type": "icon",
@@ -113,12 +114,13 @@ async function shareMessage()
                               "position": "relative",
                               "alignItems": "center",
                               "justifyContent": "flex-start",
-                              "margin": "xs",
+                              "margin": "sm",
                               "action": {
                                 "type": "uri",
                                 "label": "action",
                                 "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
-                              }
+                              },
+                              "paddingBottom": "sm"
                             }
                           ]
                         }
@@ -140,7 +142,7 @@ async function shareMessage()
                     console.log('TargetPicker was closed!')
                   }
                 }
-                
+
                 liff.closeWindow();
               }).catch(function (error) {
                 // something went wrong before sending a message
