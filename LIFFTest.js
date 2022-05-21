@@ -1,6 +1,6 @@
 import liff from '@line/liff';
 
-function myFirstLIFFApp()
+function shareMessage()
 {
     liff.init({
         liffId: '1657152200-LPb0V708',
