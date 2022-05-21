@@ -10,14 +10,29 @@ function shareMessage()
             liff.login({redirectUri: 'https://heartkage.github.io/LIFF-APP/'});
         }
         else{
-            liff.sendMessages([{
-                type: 'text',
-                text: 'Hello World',
-            }]).then(() =>{
-                window.alert('[Success] Your message has been sent!');
-            }).catch((error) =>{
-                window.alert(`[Failed] Error: ${error}`);
+            const accessToken = liff.getAccessToken();
+            console.log(accessToken);
+
+            liff.getFriendship().then((data) =>{
+                if(data.friendFlag)
+                {
+                    if(!liff.isInClient()){
+                        window.alert('Please press it in Line APP');
+                    }
+                    else{
+                        liff.sendMessages([{
+                            type: 'text',
+                            text: 'Hello World',
+                        }]).then(() =>{
+                            window.alert('[Success] Your message has been sent!');
+                        }).catch((error) =>{
+                            window.alert(`[Failed] Error: ${error}`);
+                        });
+                    }
+                }
             });
+
+            
         }
     });
 }
