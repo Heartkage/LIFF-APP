@@ -1,19 +1,13 @@
 //import liff from '@line/liff';
 
-function shareMessage()
+async function shareMessage()
 {
     liff.init({
         liffId: '1657152200-LPb0V708',
         withLoginOnExternalBrowser: true,
     }).then(() => {
-        if(!liff.isLoggedIn()){
-            liff.login({redirectUri: 'https://heartkage.github.io/LIFF-APP/'});
-        }
-
-        const accessToken = liff.getAccessToken();
-            
         if(liff.isApiAvailable('shareTargetPicker')){
-            liff.shareTargetPicker([
+            await liff.shareTargetPicker([
                 {
                     "type": "flex",
                     "altText": "送禮物囉!",
@@ -154,9 +148,8 @@ function shareMessage()
         else{
             window.alert('[Share Target Picker] NOT supported!');
         }
-        
 
-        //liff.closeWindow();
+        liff.closeWindow();
     });
 }
 
