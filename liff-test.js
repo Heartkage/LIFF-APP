@@ -116,7 +116,7 @@ function shareMessage()
                 }
               }).catch(function (error) {
                 // something went wrong before sending a message
-                console.log('something wrong happen')
+                console.log(`[Error] ${error}`)
               })
         }
         else{
