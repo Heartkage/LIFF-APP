@@ -12,6 +12,25 @@
             <div class="text-center mb-4">
                 <h1 class="h3 mb-3 font-weight-strong">LIFF</h1>
             </div>
+
+            <div class="form-label-group">
+                <select class="custom-select d-block w-100" id="type" onchange="changeType()" required>
+                    <option value="choose" disable hidden selected>選擇消息類型</option>
+                    <option value="profile">個人簡介</option>
+                    <option value="text">文字</option>
+                    <option value="image">圖片</option>
+                    <option value="video">影片</option>
+                    <option value="audio">語音</option>
+                    <option value="sticker">貼圖</option>
+                    <option value="stickerimage">貼圖圖片</option>
+                    <option value="messages">訊息</option>
+                    <option value="messagesUrl">網址訊息</option>
+                    <option value="scanQr">掃描二維碼</option>
+                    <option value="liffToken">獲得LIFF token</option>
+                    <option value="genToken">生成LIFF token</option>
+                </select>
+            </div>
+
             <p id="greet">anonymous</p>
             <a href="#" id="liffSendMessage" class="btn btn-lg btn-primary btn-block">發送LIFF消息</a>
             <p class="mt-5 mb-3 text-muted text-center">© Lala</p>
