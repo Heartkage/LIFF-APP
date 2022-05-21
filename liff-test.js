@@ -12,16 +12,6 @@ function shareMessage()
 
         const accessToken = liff.getAccessToken();
             
-        
-        // liff.sendMessages([{
-        //     type: 'text',
-        //     text: 'Hello World',
-        // }]).then(() =>{
-        //     window.alert('[Success] Your message has been sent!');
-        // }).catch((error) =>{
-        //     window.alert(`[Failed] Error: ${error}`);
-        // });
-        // 
         if(liff.isApiAvailable('shareTargetPicker')){
             liff.shareTargetPicker([
                 {
@@ -36,9 +26,9 @@ function shareMessage()
                         "title": "Menu",
                         "text": "Please select",
                         "defaultAction": {
-                            "type": "message",
+                            "type": "uri",
                             "label": "Test",
-                            "text": "Hello World"
+                            "uri": "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%97%A9%E5%AE%89"
                         },
                         "actions": [
                             {
