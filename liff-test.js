@@ -7,7 +7,7 @@ async function shareMessage()
         withLoginOnExternalBrowser: true,
     }).then(() => {
         if(liff.isApiAvailable('shareTargetPicker')){
-            await liff.shareTargetPicker([
+            liff.shareTargetPicker([
                 {
                     "type": "flex",
                     "altText": "送禮物囉!",
@@ -140,6 +140,8 @@ async function shareMessage()
                     console.log('TargetPicker was closed!')
                   }
                 }
+                
+                liff.closeWindow();
               }).catch(function (error) {
                 // something went wrong before sending a message
                 console.log(`[Error] ${error}`)
@@ -149,7 +151,7 @@ async function shareMessage()
             window.alert('[Share Target Picker] NOT supported!');
         }
 
-        liff.closeWindow();
+        
     });
 }
 
