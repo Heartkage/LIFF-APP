@@ -1,9 +1,8 @@
 //import liff from '@line/liff';
 
-async function shareMessage()
-{
+async function shareMessage() {
     var userInput = document.getElementById("input-text").value;
-    var words = userInput || '%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3';
+    var words = CheckUserInput(userInput) || '%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3';
     const baseUrl = 'https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=';
     var autoSendMessage = baseUrl.concat(words);
     liff.init({
@@ -161,3 +160,7 @@ async function shareMessage()
     });
 }
 
+function CheckUserInput(input) {
+  var withoutSpace = input.replace(/\s/g, '') 
+  return withoutSpace.substring(0, 20);
+}
