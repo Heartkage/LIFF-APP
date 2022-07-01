@@ -2,6 +2,10 @@
 
 async function shareMessage()
 {
+    var userInput = document.getElementById("input-text").value;
+    var words = userInput || '%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3';
+    const baseUrl = 'https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=';
+    var autoSendMessage = baseUrl.concat(words);
     liff.init({
         liffId: '1657152200-LPb0V708',
         withLoginOnExternalBrowser: true,
@@ -21,7 +25,7 @@ async function shareMessage()
                           "aspectMode": "cover",
                           "action": {
                             "type": "uri",
-                            "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
+                            "uri": autoSendMessage
                           }
                         },
                         "body": {
@@ -51,7 +55,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "action",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
+                                "uri": autoSendMessage
                               }
                             }
                           ],
@@ -68,7 +72,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "打開我的禮物",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
+                                "uri": autoSendMessage
                               }
                             },
                             {
@@ -78,7 +82,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "傳送感謝小卡",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
+                                "uri": autoSendMessage
                               }
                             },
                             {
@@ -118,7 +122,7 @@ async function shareMessage()
                               "action": {
                                 "type": "uri",
                                 "label": "action",
-                                "uri": "https://liff.line.me/1657153526-9VPnAZdy?auto=yes&type=text&text=%E5%AF%B6%E8%B2%9D%EF%BD%9E%E4%BA%BA%E5%AE%B6%E5%A5%BD%E6%83%B3%E4%BD%A0%E5%96%94%20%3C3"
+                                "uri": autoSendMessage
                               },
                               "paddingBottom": "sm"
                             }
