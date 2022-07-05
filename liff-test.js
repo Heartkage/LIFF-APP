@@ -16,6 +16,7 @@ async function shareMessage() {
                     "altText": "送禮物囉!",
                     "contents": {
                       "type": "bubble",
+                      "size": "kilo",
                       "hero": {
                         "type": "image",
                         "url": "https://i.ytimg.com/vi/TcstdVXu1iw/maxresdefault.jpg",
@@ -39,7 +40,9 @@ async function shareMessage() {
                             "contents": [
                               {
                                 "type": "image",
-                                "url": "https://i2.momoshop.com.tw/1635401805/goodsimg/0009/488/460/9488460_L.jpg"
+                                "url": "https://i2.momoshop.com.tw/1635401805/goodsimg/0009/488/460/9488460_L.jpg",
+                                "size": "md",
+                                "align": "center"
                               },
                               {
                                 "type": "text",
@@ -57,7 +60,9 @@ async function shareMessage() {
                             },
                             "margin": "none",
                             "alignItems": "center",
-                            "justifyContent": "flex-start"
+                            "justifyContent": "center",
+                            "offsetEnd": "lg",
+                            "offsetTop": "md"
                           }
                         ],
                         "paddingAll": "none",
@@ -88,7 +93,8 @@ async function shareMessage() {
                                 "type": "icon",
                                 "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
                                 "size": "4xl",
-                                "offsetTop": "lg"
+                                "offsetTop": "lg",
+                                "position": "relative"
                               },
                               {
                                 "type": "text",
@@ -113,14 +119,13 @@ async function shareMessage() {
                               "label": "action",
                               "uri": autoSendMessage
                             },
-                            "paddingStart": "lg",
-                            "paddingEnd": "lg",
-                            "paddingBottom": "lg"
+                            "paddingStart": "xl",
+                            "paddingEnd": "xl",
+                            "paddingBottom": "xxl"
                           }
                         ],
                         "paddingAll": "none"
-                      },
-                      "size": "kilo"
+                      }
                     }
                 },
             ]).then(function (res) {
@@ -155,6 +160,6 @@ async function shareMessage() {
 }
 
 function CheckUserInput(input) {
-  var withoutSpace = input.replace(/\s/g, '') 
-  return withoutSpace.substring(0, 20);
+  var limitedWords= input.substring(0, 20);
+  return encodeURI(limitedWords);
 }
