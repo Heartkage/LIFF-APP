@@ -15,118 +15,112 @@ async function shareMessage() {
                     "type": "flex",
                     "altText": "送禮物囉!",
                     "contents": {
-                        "type": "bubble",
-                        "hero": {
-                          "type": "image",
-                          "url": "https://i.ytimg.com/vi/TcstdVXu1iw/maxresdefault.jpg",
-                          "size": "full",
-                          "aspectRatio": "20:13",
-                          "aspectMode": "cover",
-                          "action": {
-                            "type": "uri",
-                            "uri": autoSendMessage
-                          }
+                      "type": "bubble",
+                      "hero": {
+                        "type": "image",
+                        "url": "https://i.ytimg.com/vi/TcstdVXu1iw/maxresdefault.jpg",
+                        "aspectRatio": "12:7",
+                        "aspectMode": "cover",
+                        "action": {
+                          "type": "uri",
+                          "uri": autoSendMessage
                         },
-                        "body": {
-                          "type": "box",
-                          "layout": "vertical",
-                          "contents": [
-                            {
-                              "type": "box",
-                              "layout": "horizontal",
-                              "contents": [
-                                {
-                                  "type": "image",
-                                  "url": "https://img1.momoshop.com.tw/expertimg/0009/488/468/mobile/STBYMMDD07BTC1.jpg",
-                                  "align": "center"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": "【星巴克】特大杯美式咖啡(熱)",
-                                  "weight": "bold",
-                                  "size": "lg",
-                                  "align": "start",
-                                  "wrap": true
-                                }
-                              ],
-                              "alignItems": "center",
-                              "justifyContent": "flex-start",
-                              "action": {
-                                "type": "uri",
-                                "label": "action",
-                                "uri": autoSendMessage
-                              }
-                            }
-                          ],
-                          "paddingTop": "md",
-                          "paddingBottom": "none"
-                        },
-                        "footer": {
-                          "type": "box",
-                          "layout": "vertical",
-                          "spacing": "sm",
-                          "contents": [
-                            {
-                              "type": "button",
-                              "action": {
-                                "type": "uri",
-                                "label": "打開我的禮物",
-                                "uri": autoSendMessage
-                              }
-                            },
-                            {
-                              "type": "button",
-                              "style": "link",
-                              "height": "sm",
-                              "action": {
-                                "type": "uri",
-                                "label": "傳送感謝小卡",
-                                "uri": autoSendMessage
-                              }
-                            },
-                            {
-                              "type": "separator",
-                              "margin": "none"
-                            },
-                            {
-                              "type": "box",
-                              "layout": "baseline",
-                              "contents": [
-                                {
-                                  "type": "icon",
-                                  "url": "https://cdn-icons-png.flaticon.com/512/3209/3209955.png",
-                                  "size": "3xl",
-                                  "offsetTop": "md"
-                                },
-                                {
-                                  "type": "text",
-                                  "text": "限時送禮",
-                                  "size": "md",
-                                  "weight": "bold",
-                                  "color": "#A9A9A9",
-                                  "offsetBottom": "sm"
-                                },
-                                {
-                                  "type": "icon",
-                                  "size": "lg",
-                                  "offsetTop": "sm",
-                                  "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
-                                }
-                              ],
-                              "spacing": "md",
-                              "position": "relative",
-                              "alignItems": "center",
-                              "justifyContent": "flex-start",
-                              "margin": "sm",
-                              "action": {
-                                "type": "uri",
-                                "label": "action",
-                                "uri": autoSendMessage
+                        "offsetTop": "none",
+                        "margin": "none",
+                        "size": "full"
+                      },
+                      "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                              {
+                                "type": "image",
+                                "url": "https://i2.momoshop.com.tw/1635401805/goodsimg/0009/488/460/9488460_L.jpg"
                               },
-                              "paddingBottom": "sm"
-                            }
-                          ]
-                        }
+                              {
+                                "type": "text",
+                                "text": "【星巴克】特大杯那堤買一送一",
+                                "weight": "bold",
+                                "size": "md",
+                                "align": "start",
+                                "wrap": true
+                              }
+                            ],
+                            "action": {
+                              "type": "uri",
+                              "label": "action",
+                              "uri": autoSendMessage
+                            },
+                            "margin": "none",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start"
+                          }
+                        ],
+                        "paddingAll": "none",
+                        "margin": "none"
+                      },
+                      "footer": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "點擊領取",
+                              "uri": autoSendMessage
+                            },
+                            "style": "link"
+                          },
+                          {
+                            "type": "separator",
+                            "margin": "none"
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                              {
+                                "type": "icon",
+                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
+                                "size": "4xl",
+                                "offsetTop": "lg"
+                              },
+                              {
+                                "type": "text",
+                                "text": "查看更多星意禮",
+                                "size": "md",
+                                "weight": "bold",
+                                "offsetBottom": "sm",
+                                "color": "#AAAAAA",
+                                "align": "center"
+                              },
+                              {
+                                "type": "icon",
+                                "size": "lg",
+                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
+                              }
+                            ],
+                            "position": "relative",
+                            "alignItems": "center",
+                            "justifyContent": "center",
+                            "action": {
+                              "type": "uri",
+                              "label": "action",
+                              "uri": autoSendMessage
+                            },
+                            "paddingStart": "lg",
+                            "paddingEnd": "lg",
+                            "paddingBottom": "lg"
+                          }
+                        ],
+                        "paddingAll": "none"
+                      },
+                      "size": "kilo"
                     }
                 },
             ]).then(function (res) {
