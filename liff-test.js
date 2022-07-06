@@ -92,7 +92,7 @@ async function shareMessage() {
                               {
                                 "type": "icon",
                                 "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
-                                "size": "4xl",
+                                "size": "3xl",
                                 "offsetTop": "lg",
                                 "position": "relative"
                               },
@@ -107,7 +107,7 @@ async function shareMessage() {
                               },
                               {
                                 "type": "icon",
-                                "size": "lg",
+                                "size": "md",
                                 "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
                               }
                             ],
@@ -121,7 +121,8 @@ async function shareMessage() {
                             },
                             "paddingStart": "xl",
                             "paddingEnd": "xl",
-                            "paddingBottom": "xxl"
+                            "paddingBottom": "xl",
+                            "paddingTop": "sm"
                           }
                         ],
                         "paddingAll": "none"
