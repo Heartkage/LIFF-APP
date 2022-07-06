@@ -63,15 +63,7 @@ async function shareMessage() {
                             "justifyContent": "center",
                             "offsetEnd": "lg",
                             "offsetTop": "md"
-                          }
-                        ],
-                        "paddingAll": "none",
-                        "margin": "none"
-                      },
-                      "footer": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
+                          },
                           {
                             "type": "button",
                             "action": {
@@ -84,45 +76,49 @@ async function shareMessage() {
                           {
                             "type": "separator",
                             "margin": "none"
-                          }//,
-                          // {
-                          //   "type": "box",
-                          //   "layout": "baseline",
-                          //   "contents": [
-                          //     {
-                          //       "type": "icon",
-                          //       "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
-                          //       "size": "3xl",
-                          //       "offsetTop": "lg",
-                          //       "position": "relative"
-                          //     },
-                          //     {
-                          //       "type": "text",
-                          //       "text": "查看更多星意禮",
-                          //       "size": "md",
-                          //       "weight": "bold",
-                          //       "offsetBottom": "sm",
-                          //       "color": "#AAAAAA",
-                          //       "align": "center"
-                          //     },
-                          //     {
-                          //       "type": "icon",
-                          //       "size": "md",
-                          //       "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
-                          //     }
-                          //   ],
-                          //   "position": "relative",
-                          //   "action": {
-                          //     "type": "uri",
-                          //     "label": "action",
-                          //     "uri": autoSendMessage
-                          //   },
-                          //   "paddingStart": "xl",
-                          //   "paddingEnd": "xl",
-                          //   "paddingBottom": "xl",
-                          //   "paddingTop": "sm"
-                          // }
+                          }
                         ],
+                        "paddingAll": "none",
+                        "margin": "none"
+                      },
+                      "footer": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                              {
+                                "type": "icon",
+                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
+                                "position": "relative",
+                                "size": "3xl",
+                                "offsetTop": "lg"
+                              },
+                              {
+                                "type": "text",
+                                "text": "查看更多星意禮",
+                                "size": "md",
+                                "weight": "bold",
+                                "align": "center"
+                              },
+                              {
+                                "type": "icon",
+                                "size": "md",
+                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
+                              }
+                            ],
+                            "action": {
+                              "type": "uri",
+                              "label": "action",
+                              "uri": autoSendMessage
+                            },
+                            "paddingEnd": "xl",
+                            "paddingStart": "xl",
+                            "paddingBottom": "lg"
+                          }
+                        ]
                       }
                     }
                 },
