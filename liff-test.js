@@ -102,12 +102,12 @@ async function shareMessage() {
                                 "size": "md",
                                 "weight": "bold",
                                 "align": "center"
-                              }//,
-                              // {
-                              //   "type": "icon",
-                              //   "size": "md",
-                              //   "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
-                              // }
+                              },
+                              {
+                                "type": "icon",
+                                "size": "md",
+                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
+                              }
                             ],
                             "action": {
                               "type": "uri",
@@ -116,6 +116,7 @@ async function shareMessage() {
                             },
                             "paddingEnd": "xl",
                             "paddingStart": "xl",
+                            "paddingTop": "md",
                             "paddingBottom": "lg"
                           }
                         ]
