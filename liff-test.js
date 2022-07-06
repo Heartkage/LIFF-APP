@@ -89,25 +89,25 @@ async function shareMessage() {
                             "type": "box",
                             "layout": "baseline",
                             "contents": [
-                              {
-                                "type": "icon",
-                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
-                                "position": "relative",
-                                "size": "3xl",
-                                "offsetTop": "lg"
-                              },
+                              // {
+                              //   "type": "icon",
+                              //   "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
+                              //   "position": "relative",
+                              //   "size": "3xl",
+                              //   "offsetTop": "lg"
+                              // },
                               {
                                 "type": "text",
                                 "text": "查看更多星意禮",
                                 "size": "md",
                                 "weight": "bold",
                                 "align": "center"
-                              },
-                              {
-                                "type": "icon",
-                                "size": "md",
-                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
-                              }
+                              }//,
+                              // {
+                              //   "type": "icon",
+                              //   "size": "md",
+                              //   "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
+                              // }
                             ],
                             "action": {
                               "type": "uri",
