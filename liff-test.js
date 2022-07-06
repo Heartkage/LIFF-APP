@@ -89,13 +89,12 @@ async function shareMessage() {
                             "type": "box",
                             "layout": "baseline",
                             "contents": [
-                              // {
-                              //   "type": "icon",
-                              //   "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
-                              //   "position": "relative",
-                              //   "size": "3xl",
-                              //   "offsetTop": "lg"
-                              // },
+                              {
+                                "type": "icon",
+                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
+                                "size": "3xl",
+                                "offsetTop": "md"
+                              },
                               {
                                 "type": "text",
                                 "text": "查看更多星意禮",
@@ -116,8 +115,8 @@ async function shareMessage() {
                             },
                             "paddingEnd": "xl",
                             "paddingStart": "xl",
-                            "paddingTop": "md",
-                            "paddingBottom": "lg"
+                            //"paddingTop": "md",
+                            "paddingBottom": "md"
                           }
                         ]
                       }
