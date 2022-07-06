@@ -41,8 +41,8 @@ async function shareMessage() {
                               {
                                 "type": "image",
                                 "url": "https://i2.momoshop.com.tw/1635401805/goodsimg/0009/488/460/9488460_L.jpg",
-                                "size": "md",
-                                "align": "center"
+                                "align": "center",
+                                "flex": 2
                               },
                               {
                                 "type": "text",
@@ -50,7 +50,8 @@ async function shareMessage() {
                                 "weight": "bold",
                                 "size": "md",
                                 "align": "start",
-                                "wrap": true
+                                "wrap": true,
+                                "flex": 3
                               }
                             ],
                             "action": {
@@ -58,11 +59,11 @@ async function shareMessage() {
                               "label": "action",
                               "uri": autoSendMessage
                             },
-                            "margin": "none",
                             "alignItems": "center",
                             "justifyContent": "center",
-                            "offsetEnd": "xl",
-                            "offsetTop": "md"
+                            "paddingTop": "md",
+                            "paddingStart": "md",
+                            "paddingEnd": "lg"
                           },
                           {
                             "type": "button",
