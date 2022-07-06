@@ -61,7 +61,7 @@ async function shareMessage() {
                             "margin": "none",
                             "alignItems": "center",
                             "justifyContent": "center",
-                            "offsetEnd": "lg",
+                            "offsetEnd": "xl",
                             "offsetTop": "md"
                           },
                           {
@@ -87,25 +87,26 @@ async function shareMessage() {
                         "contents": [
                           {
                             "type": "box",
-                            "layout": "baseline",
+                            "layout": "horizontal",
                             "contents": [
                               {
-                                "type": "icon",
+                                "type": "image",
                                 "url": "https://images.chinatimes.com/newsphoto/2022-02-10/1024/20220210005444.png",
-                                "size": "3xl"//,
-                                // "offsetTop": "md"
+                                "size": "30px"
                               },
                               {
                                 "type": "text",
                                 "text": "查看更多星意禮",
                                 "size": "md",
                                 "weight": "bold",
-                                "align": "center"
+                                "align": "center",
+                                "flex": 5,
+                                "color": "#AAAAAA"
                               },
                               {
-                                "type": "icon",
-                                "size": "md",
-                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
+                                "type": "image",
+                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png",
+                                "size": "15px"
                               }
                             ],
                             "action": {
@@ -113,12 +114,12 @@ async function shareMessage() {
                               "label": "action",
                               "uri": autoSendMessage
                             },
-                            "paddingEnd": "xl",
-                            "paddingStart": "xl",
-                            //"paddingTop": "md",
-                            "paddingBottom": "md"
+                            "alignItems": "center",
+                            "justifyContent": "center",
+                            "paddingStart": "lg"
                           }
-                        ]
+                        ],
+                        "paddingAll": "xl"
                       }
                     }
                 },
