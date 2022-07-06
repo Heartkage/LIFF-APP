@@ -67,65 +67,6 @@ async function shareMessage() {
                         ],
                         "paddingAll": "none",
                         "margin": "none"
-                      },
-                      "footer": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                          {
-                            "type": "button",
-                            "action": {
-                              "type": "uri",
-                              "label": "點擊領取",
-                              "uri": autoSendMessage
-                            },
-                            "style": "link"
-                          },
-                          {
-                            "type": "separator",
-                            "margin": "none"
-                          },
-                          {
-                            "type": "box",
-                            "layout": "baseline",
-                            "contents": [
-                              {
-                                "type": "icon",
-                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
-                                "size": "3xl",
-                                "offsetTop": "lg",
-                                "position": "relative"
-                              },
-                              {
-                                "type": "text",
-                                "text": "查看更多星意禮",
-                                "size": "md",
-                                "weight": "bold",
-                                "offsetBottom": "sm",
-                                "color": "#AAAAAA",
-                                "align": "center"
-                              },
-                              {
-                                "type": "icon",
-                                "size": "md",
-                                "url": "https://media.msufcu.org/publicsites/publicsite/icons/arrow_right_gray.png"
-                              }
-                            ],
-                            "position": "relative",
-                            "alignItems": "center",
-                            "justifyContent": "center",
-                            "action": {
-                              "type": "uri",
-                              "label": "action",
-                              "uri": autoSendMessage
-                            },
-                            "paddingStart": "xl",
-                            "paddingEnd": "xl",
-                            "paddingBottom": "xl",
-                            "paddingTop": "sm"
-                          }
-                        ],
-                        "paddingAll": "none"
                       }
                     }
                 },
