@@ -91,7 +91,7 @@ async function shareMessage() {
                             "contents": [
                               {
                                 "type": "icon",
-                                "url": "https://www.12cm.com.tw/wp-content/uploads/2022/05/星巴克X12CM-Taiwan.png",
+                                "url": "https://images.chinatimes.com/newsphoto/2022-02-10/1024/20220210005444.png",
                                 "size": "3xl"//,
                                 // "offsetTop": "md"
                               },
